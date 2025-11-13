@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'my-node-app'
-        DOCKER_HUB_USER='saisuma18' 
+        DOCKER_HUB_USER='vasavi385' 
         DOCKER_IMAGE = "${DOCKER_HUB_USER}/my-node-app:latest"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/saisuma18/Jenkins_Project2.git'
+                git 'https://github.com/dv19980105/jenkins_project2.git'
             }
         }
 
